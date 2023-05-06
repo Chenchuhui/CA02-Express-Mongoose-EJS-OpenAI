@@ -105,6 +105,12 @@ app.get('/about',
         res.render('about');
     }
 )
+app.get('/team',
+    isLoggedIn,
+    (req, res, next) => {
+        res.render('team');
+    }
+)
 
 app.use(toDoRouter);
 app.use(fortuneRouter);

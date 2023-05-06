@@ -1,6 +1,10 @@
-<h1></h1>
-CS103a Chenchuhui Hu Demo App</h1>
+<h1>CS103a Chenchuhui Hu Demo App</h1>
 <p class="text-danger">Welcome to the App</p>
-<a href="/fortune"> 
-        get your fortune</a>
-<br>
+<% if (!loggedIn) {%>
+    <h3>Please log in!</h3>
+
+    <% } else  { %>
+        <a href="/fortune"> 
+        Chenchuhui Hu: get your fortune</a>
+        <br>
+        <% } %>
